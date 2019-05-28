@@ -1,8 +1,12 @@
 # Docker Laravel Starter
 
-#### 1. Clone or download this repository
+#### 1. Clone this repository
+
+`git clone https://github.com/wowthemesnet/docker-laravel-starter.git`
 
 #### 2. Navigate in project directory
+
+`cd docker-laravel-starter`
 
 #### 3. Composer install
 On Linux/MacOS: `docker run --rm -v $(pwd):/app composer install`  
