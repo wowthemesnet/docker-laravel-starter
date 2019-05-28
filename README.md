@@ -37,9 +37,11 @@ Enter on http://localhost
 - run migrations: `docker-compose exec app php artisan migrate`
 - access db PhpMyAdmin: http://localhost:7000
 - run the following to install [Voyager Admin](https://docs.laravelvoyager.com/getting-started/installation):
+
     On Linux/MacOS: `docker run --rm -v $(pwd):/app composer require tcg/voyager`  
     On Windows in PowerShell: `docker run --rm -v ${PWD}:/app composer require tcg/voyager`  
     On Windows in CMD: `docker run --rm -v %cd%:/app composer require tcg/voyager`
+    
 - create a Voyager admin account: `docker-compose exec app php artisan voyager:admin someemail@gmail.com --create`
 
 
