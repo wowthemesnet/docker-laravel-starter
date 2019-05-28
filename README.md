@@ -54,12 +54,10 @@ Enter on http://localhost
     User: admin@admin.com
     Pass: password
 
-<hr>
-
 #### Credits
 - Credits and many thanks to [AngCosmin](https://github.com/AngCosmin/docker-laravel)
 - Source: [DigitalOcean Community](https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose)
 
 <hr>
 
-#### Enjoy and visit [me](https://www.wowthemes.net)
+#### [Buy me a coffee](https://www.wowthemes.net/donate/)
