@@ -42,7 +42,7 @@ Enter on http://localhost
     On Windows in PowerShell: `docker run --rm -v ${PWD}:/app composer require tcg/voyager`  
     On Windows in CMD: `docker run --rm -v %cd%:/app composer require tcg/voyager`
 
--create a Voyager admin account: `docker-compose exec app php artisan voyager:admin someemail@gmail.com --create`
+- create a Voyager admin account: `docker-compose exec app php artisan voyager:admin someemail@gmail.com --create`
 
 <hr>
 
