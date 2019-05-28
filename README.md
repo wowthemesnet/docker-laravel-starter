@@ -34,17 +34,25 @@ On Windows in CMD: `docker run --rm -v %cd%:/app composer install`
 Enter on http://localhost  
 
 #### Useful Tasks
-- run the following to install [Voyager Admin](https://docs.laravelvoyager.com/getting-started/installation):
+- run migrations: `docker-compose exec app php artisan migrate`    
+- access db PhpMyAdmin: http://localhost:7000
+
+#### 8. Install Voyager Admin
+
+- run the following to install Voyager Admin:
 
     On Linux/MacOS: `docker run --rm -v $(pwd):/app composer require tcg/voyager`  
     On Windows in PowerShell: `docker run --rm -v ${PWD}:/app composer require tcg/voyager`  
     On Windows in CMD: `docker run --rm -v %cd%:/app composer require tcg/voyager`
-    
-- create a Voyager admin account: `docker-compose exec app php artisan voyager:admin someemail@gmail.com --create`
-- run migrations: `docker-compose exec app php artisan migrate`
-- access db PhpMyAdmin: http://localhost:7000
 
+- `docker-compose exec app php artisan voyager:install --with-dummy`
+- `docker-compose exec app php artisan vendor:publish --provider="TCG\Voyager\VoyagerServiceProvider"`
+- `docker-compose exec app php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"`
 
+- Access Voyager account: http://localhost/admin 
+
+    User: admin@admin.com
+    Pass: password
 
 <hr>
 
@@ -52,4 +60,6 @@ Enter on http://localhost
 - Credits and many thanks to [AngCosmin](https://github.com/AngCosmin/docker-laravel)
 - Source: [DigitalOcean Community](https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose)
 
-#### Enjoy and visit us at [WowThemes](https://www.wowthemes.net)
+<hr>
+
+#### Enjoy and visit [me](https://www.wowthemes.net)
