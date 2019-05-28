@@ -5,7 +5,7 @@ Basic Laravel setup with Docker:
 - PHPMyAdmin
 - NGINX
 - Composer
-- Voyager Admin (optional)
+- Voyager Admin
 
 
 #### 1. Clone this repository
